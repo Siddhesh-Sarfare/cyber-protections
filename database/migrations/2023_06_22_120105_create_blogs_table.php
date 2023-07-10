@@ -21,6 +21,7 @@ class CreateBlogsTable extends Migration
             $table->longText('description');
             $table->text('image_name');
             $table->text('image_path');
+            $table->longText('keywords');
             $table->timestamps();
             $table->softDeletes();
         });

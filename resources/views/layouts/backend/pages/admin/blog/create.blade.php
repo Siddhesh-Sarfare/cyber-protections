@@ -5,6 +5,18 @@
 @endsection
 
 @section('sub-custom-styles')
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css"
+      rel="stylesheet"
+    />
+  <style type="text/css">
+    .bootstrap-tagsinput .tag {
+      margin: 2px;
+      color: white !important;
+      background-color: #0d6efd;
+      padding: 0.2rem;
+    }
+  </style>
 @endsection
 
 @section('sub-custom-scripts')
@@ -60,6 +72,39 @@
         }
     });
 </script>
+
+{{-- <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script> --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+  <script>
+    $(function () {
+      $('input')
+        .on('change', function (event) {
+          var $element = $(event.target);
+          var $container = $element.closest('.example');
+
+          if (!$element.data('tagsinput')) return;
+
+          var val = $element.val();
+          if (val === null) val = 'null';
+          var items = $element.tagsinput('items');
+
+          $('code', $('pre.val', $container)).html(
+            $.isArray(val)
+              ? JSON.stringify(val)
+              : '"' + val.replace('"', '\\"') + '"'
+          );
+          $('code', $('pre.items', $container)).html(
+            JSON.stringify($element.tagsinput('items'))
+          );
+        })
+        .trigger('change');
+    });
+  </script>
 @endsection
 
 @section('page-content')
@@ -108,6 +153,14 @@
                                 <input type="file" name="blog-image" class="form-control" id="blog-image">
                             </div>
                             <!-- /image -->
+
+                            <!-- seo keywords -->
+                            <div class="form-group">
+                                <label class="col-form-label" for="keywords">Keywords</label><br>
+                                <input type="text" name="keywords" class="form-control pt-4" id="keywords" data-role="tagsinput" value="{{ old('keywords') }}"
+                                    required autofocus>
+                            </div>
+                            <!-- /seo keywords -->
                         </div>
                         <div class="card-footer">
                             <div class="row">

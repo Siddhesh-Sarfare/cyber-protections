@@ -40,6 +40,7 @@ class BlogRequest extends FormRequest
                     'author' => 'required',
                     'description' => 'required',
                     'blog-image' => 'required|mimes:png,jpg,jpeg|min:1',
+                    'keywords' => 'required',
                 ];
                 break;
 
@@ -50,6 +51,7 @@ class BlogRequest extends FormRequest
                     'author' => 'required',
                     'description' => 'required',
                     'blog-image' => 'mimes:png,jpg,jpeg|min:1',
+                    'keywords' => 'required',
                 ];
                 break;
 
@@ -72,6 +74,7 @@ class BlogRequest extends FormRequest
             'author.required' => 'Please enter a Author',
             'description.required' => 'Please enter a Description',
             'blog-image.required' => 'Please attach an image ',
+            'keywords.required' => 'Add keywords ',
         ];
     }
 }

@@ -47,6 +47,7 @@ class BlogController extends Controller
                 $permanent_link = $request->input('permanent_link');
                 $author = $request->input('author');
                 $description = $request->input('description');
+                $keywords = $request->input('keywords');
                 $image_file = $request->file('blog-image'); // the image  file
                 $image_file_name = $image_file->getClientOriginalName(); //the file name with extension
                 $image_file_extension = $image_file->getClientOriginalExtension(); // the file extension
@@ -67,6 +68,7 @@ class BlogController extends Controller
                     $newFile->description = $description;
                     $newFile->image_name = $image_file_name;
                     $newFile->image_path = $image_file_path;
+                    $newFile->keywords = $keywords;
                     $fileUploadStatus = $newFile->save();
 
                     if ($fileUploadStatus) {
@@ -126,6 +128,7 @@ class BlogController extends Controller
         $permanent_link = $request->input('permanent_link');
         $author = $request->input('author');
         $description = $request->input('description');
+        $keywords = $request->input('keywords');
 
         //store in database
         $updateFile = Blog::find($id);
@@ -133,6 +136,7 @@ class BlogController extends Controller
         $updateFile->permanent_link = $permanent_link;
         $updateFile->author = $author;
         $updateFile->description = $description;
+        $updateFile->keywords = $keywords;
         $UpdateStatus = $updateFile->save();
 
         if ($UpdateStatus) {
