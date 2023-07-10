@@ -131,8 +131,11 @@ class PagesController extends Controller
     public function blogDetails($permanent_link)
     {
         $blog = DB::select("select * from blogs where permanent_link = '$permanent_link'");
-        // dd($blog);
-        return view('layouts.frontend.pages.blog-details', compact('blog'));
+        if(count($blog)==1){
+            return view('layouts.frontend.pages.blog-details', compact('blog'));
+        } else {
+            return $this->not_found();
+        }
     }
 
 

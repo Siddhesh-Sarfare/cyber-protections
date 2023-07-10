@@ -1,5 +1,9 @@
 @extends('layouts.frontend.master')
 
+@section('title')
+Gallery
+@endsection
+
 @section('page-content')
     <link href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css" rel="stylesheet">
     <main class="main">

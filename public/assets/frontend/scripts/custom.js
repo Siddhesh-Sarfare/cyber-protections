@@ -3,9 +3,9 @@ $(function () {
     "use strict";
 
     /*----- Page Loader Start ----- */
-    // $(window).on("load", function () {
-    //     $("#preloader").delay(500).fadeOut(50);
-    // });
+    $(window).on("load", function () {
+        $("#preloader").delay(500).fadeOut(50);
+    });
     /*----- Page Loader End ----- */
 
     /*----- Sticky Header Start ----- */

@@ -24,6 +24,11 @@
   <meta http-equiv="Cache-control" content="public">
   <title>CyberProtections | @yield('title')</title>
 
+  
+  <meta name="keywords" content="@yield('keywords')">
+
+  <meta name="description" content="@yield('description')">
+
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link type="image/x-icon"

@@ -1,5 +1,9 @@
 @extends('layouts.frontend.master')
 
+@section('title')
+FAQs
+@endsection
+
 @section('page-content')
     <main class="main">
         <section class="page-banner text-center relative">

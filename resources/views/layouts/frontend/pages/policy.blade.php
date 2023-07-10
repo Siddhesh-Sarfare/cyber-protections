@@ -1,5 +1,9 @@
 @extends('layouts.frontend.master')
 
+@section('title')
+Privacy Policy
+@endsection
+
 @section('page-content')
 
   <main class="main">
