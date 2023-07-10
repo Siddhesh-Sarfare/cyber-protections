@@ -1,5 +1,9 @@
 @extends('layouts.frontend.master')
 
+@section('title')
+News
+@endsection
+
 @section('page-content')
 
 <main class="main">

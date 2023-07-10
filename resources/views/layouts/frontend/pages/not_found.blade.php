@@ -1,5 +1,9 @@
 @extends('layouts.frontend.master')
 
+@section('title')
+Page Not Found
+@endsection
+
 @section('page-content')
 <style class="automa-element-selector">
     @font-face {

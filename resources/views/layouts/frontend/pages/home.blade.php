@@ -1,5 +1,13 @@
 @extends('layouts.frontend.master')
 
+@section('title')
+Home
+@endsection
+
+@section('keywords', 'Cybersecurity, Cyber Protection, Cyber Attacks, Cyber Crime, Online Security, Data Privacy, Cybersecurity Solutions, Cybersecurity News, Cybersecurity Tips')
+
+@section('description','CyberProtections.in is your comprehensive guide to cyber protection and security. Stay informed about the latest cyber threats, learn how to safeguard your digital presence, and discover effective cybersecurity solutions. Explore articles, guides, and practical tips to defend against cyber attacks, protect your data privacy, and ensure online security for individuals and small businesses.')
+
 @section('page-content')
     <main class="main">
         <section class="home-banner relative overflow-h">

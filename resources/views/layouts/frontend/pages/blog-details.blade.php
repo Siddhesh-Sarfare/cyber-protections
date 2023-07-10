@@ -1,5 +1,9 @@
 @extends('layouts.frontend.master')
 
+@section('title')
+{{ $blog[0]->title }}
+@endsection
+
 @section('page-content')
 
 

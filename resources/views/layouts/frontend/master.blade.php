@@ -13,12 +13,12 @@
 
 <body>
     <!-- Start preloader -->
-    {{-- <div id="preloader">
+    <div id="preloader">
         <div class="preloader-box">
             <img src="{{asset("assets/frontend/images/loader.png")}}" decoding="async" alt="Loader">
             <p class="loading">Loading</p>
         </div>
-    </div> --}}
+    </div>
     <!-- End preloader -->
 
     @include('layouts.frontend.navigation')

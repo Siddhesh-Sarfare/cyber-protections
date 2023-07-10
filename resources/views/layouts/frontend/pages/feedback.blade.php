@@ -1,5 +1,9 @@
 @extends('layouts.frontend.master')
 
+@section('title')
+Feedback
+@endsection
+
 @push('styles')
     <style>
         .required {
