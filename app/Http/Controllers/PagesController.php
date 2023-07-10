@@ -126,9 +126,9 @@ class PagesController extends Controller
      * Blog Details
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function blogDetails($id)
+    public function blogDetails($permanent_link)
     {
-        $blog = Blog::find($id);
+        $blog = DB::select("select * from blogs where permanent_link = '$permanent_link'");
         // dd($blog);
         return view('layouts.frontend.pages.blog-details', compact('blog'));
     }

@@ -230,15 +230,15 @@
                                     @foreach ($blogList as $blog)
                                         <div class="owl-item" style="width: 380px; margin-right: 30px;">
                                             <div class="blog-boxs purple">
-                                                <a class="blog-img" href="{{ route('blog_details', $blog->id) }}"><img alt="Cryptocash is a clean" decoding="async" src="{{ asset('assets/backend/images/blog_images/' . $blog->image_path) }}"></a>
+                                                <a class="blog-img" href="{{ route('blog_details', $blog->permanent_link) }}"><img alt="Cryptocash is a clean" decoding="async" src="{{ asset('assets/backend/images/blog_images/' . $blog->image_path) }}"></a>
                                                 <div class="blog-content">
                                                     <span class="blog-date">{{ \Carbon\Carbon::parse($blog->created_at)->format('Y-m-d') }}
                                                         <span class="blog-authore">{{ $blog->author }}</span></span>
                                                     <h5 class="blog-title">
-                                                        <a href="{{ route('blog_details', $blog->id) }}">{{ $blog->title }}</a>
+                                                        <a href="{{ route('blog_details', $blog->permanent_link) }}">{{ $blog->title }}</a>
                                                     </h5>
                                                     {!! $blog->description !!}
-                                                    <a class="read-more text-uppercase" href="{{ route('blog_details', $blog->id) }}">Read More
+                                                    <a class="read-more text-uppercase" href="{{ route('blog_details', $blog->permanent_link) }}">Read More
                                                         <i aria-hidden="true" class="fa fa-angle-right"></i></a>
                                                 </div>
                                             </div>

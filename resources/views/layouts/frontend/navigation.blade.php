@@ -20,28 +20,34 @@
                             <li>
                                 <a href="{{ route('home') }}">Home</a>
                             </li>
+
                             <li>
                                 <a href="{{ route('about') }}">About</a>
                             </li>
-                            <li>
+
+                            <li class="menu-dropdwon" id="resource">
                                 <a href="{{ route('resource') }}">Resource Center</a>
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ route('faqs') }}">FAQS</a></li>
+                                    <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                                </ul>
                             </li>
-                            <li>
+
+                            <li class="menu-dropdwon" id="news">
                                 <a href="{{ route('news') }}">News</a>
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ route('blogs') }}">Blog</a></li>
+                                </ul>
                             </li>
+
                             <li>
                                 <a href="{{ route('grievances') }}">Grievances</a>
                             </li>
-                            <li>
+                            
+                            <li class="menu-dropdwon" id="contact">
                                 <a href="{{ route('contact') }}">Contact</a>
-                            </li>
-                            <li class="menu-dropdwon" id="more_menu">
-                                <a href="#">More</a>
                                 <ul class="list-unstyled">
-                                    <li><a href="{{ route('faqs') }}">FAQS</a></li>
                                     <li><a href="{{ route('feedback') }}">Feedback</a></li>
-                                    <li><a href="{{ route('blogs') }}">Blog</a></li>
-                                    <li><a href="{{ route('gallery') }}">Gallery</a></li>
                                 </ul>
                             </li>
                         </ul>

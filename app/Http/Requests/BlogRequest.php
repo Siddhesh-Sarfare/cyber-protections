@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class BlogRequest extends FormRequest
 {
@@ -35,6 +36,7 @@ class BlogRequest extends FormRequest
             case 'POST':
                 return [
                     'title' => 'required',
+                    'permanent_link' => 'required|unique:blogs',
                     'author' => 'required',
                     'description' => 'required',
                     'blog-image' => 'required|mimes:png,jpg,jpeg|min:1',
@@ -44,6 +46,7 @@ class BlogRequest extends FormRequest
             case 'PATCH':
                 return [
                     'title' => 'required',
+                    'permanent_link' => 'required|' . Rule::unique('blogs')->ignore($this->id),
                     'author' => 'required',
                     'description' => 'required',
                     'blog-image' => 'mimes:png,jpg,jpeg|min:1',
@@ -64,6 +67,8 @@ class BlogRequest extends FormRequest
     {
         return [
             'title.required' => 'Please enter a Title',
+            'permanent_link.required' => 'Please enter a Permanent link',
+            'permanent_link.unique' => 'Permanent link is already existed with same input',
             'author.required' => 'Please enter a Author',
             'description.required' => 'Please enter a Description',
             'blog-image.required' => 'Please attach an image ',

@@ -21,15 +21,15 @@
           <div class="col-xl-12 col-lg-12 col-md-12">
             <div class="blog-detail-img">
               {{-- <img src="/Cryptorius_files/images/blog-10.jpg" alt="Blog Image"> --}}
-              <img src="{{ asset("assets/backend/images/blog_images/".$blog->image_path) }}" alt="Blog Image">
+              <img src="{{ asset("assets/backend/images/blog_images/".$blog[0]->image_path) }}" alt="Blog Image">
             </div>
             <div class="blog-detail-content">
               <ul>
-                <li>{{ \Carbon\Carbon::parse($blog->created_at)->format('Y-m-d') }}</li>
-                <li>{{ $blog->author }}</li>
+                <li>{{ \Carbon\Carbon::parse($blog[0]->created_at)->format('Y-m-d') }}</li>
+                <li>{{ $blog[0]->author }}</li>
               </ul>
-              <p class="fs-5 text-dark">{{ $blog->title }}</p>
-              <p class="fs-5 text-dark">{!! $blog->description !!}</p>
+              <p class="fs-5 text-dark">{{ $blog[0]->title }}</p>
+              <p class="fs-5 text-dark">{!! $blog[0]->description !!}</p>
             </div>
           </div>
         </div>

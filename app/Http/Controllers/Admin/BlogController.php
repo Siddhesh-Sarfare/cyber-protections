@@ -44,6 +44,7 @@ class BlogController extends Controller
             if ($request->file('blog-image')->isValid()) {
 
                 $title = $request->input('title');
+                $permanent_link = $request->input('permanent_link');
                 $author = $request->input('author');
                 $description = $request->input('description');
                 $image_file = $request->file('blog-image'); // the image  file
@@ -61,6 +62,7 @@ class BlogController extends Controller
                     //store in database
                     $newFile = new Blog();
                     $newFile->title = $title;
+                    $newFile->permanent_link = $permanent_link;
                     $newFile->author = $author;
                     $newFile->description = $description;
                     $newFile->image_name = $image_file_name;
@@ -121,12 +123,14 @@ class BlogController extends Controller
     public function update(BlogRequest $request, $id)
     {
         $title = $request->input('title');
+        $permanent_link = $request->input('permanent_link');
         $author = $request->input('author');
         $description = $request->input('description');
 
         //store in database
         $updateFile = Blog::find($id);
         $updateFile->title = $title;
+        $updateFile->permanent_link = $permanent_link;
         $updateFile->author = $author;
         $updateFile->description = $description;
         $UpdateStatus = $updateFile->save();

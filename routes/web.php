@@ -44,7 +44,7 @@ Route::group(['middleware' => ['throttle:25,1']], function () {
     Route::get('faqs', [PagesController::class, 'faqs'])->name('faqs');
     Route::get('feedback', [PagesController::class, 'feedback'])->name('feedback');
     Route::get('blogs', [PagesController::class, 'blogs'])->name('blogs');
-    Route::get('blog_details/{id}', [PagesController::class, 'blogDetails'])->name('blog_details');
+    Route::get('blog_details/{permanent_link}', [PagesController::class, 'blogDetails'])->name('blog_details');
     Route::get('policy', [PagesController::class, 'policy'])->name('policy');
     Route::get('not_found', [PagesController::class, 'not_found'])->name('not_found');
     Route::get('gallery', [PagesController::class, 'gallery'])->name('gallery');

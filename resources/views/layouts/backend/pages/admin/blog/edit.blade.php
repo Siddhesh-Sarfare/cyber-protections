@@ -16,6 +16,50 @@
             });
         })
 </script>
+
+<!-- Auto generate text in permanent_link while typing in title -->
+<script>
+    // Get references to the input fields
+    var titleInput = document.getElementById('title');
+    var permanentLinkInput = document.getElementById('permanent_link');
+
+    // Add an event listener to the name input field
+    titleInput.addEventListener('input', function() {
+        // Get the value of the name input field
+        var titleValue = titleInput.value;
+
+        // Replace spaces with hyphen in the title
+        var formattedTitle = titleValue.replace(/\s+/g, '-');
+
+        // Remove special characters excluding hyphen from the formatted title
+        formattedTitle = formattedTitle.replace(/[^-\w]/g, '');
+
+        // Generate the corresponding permanent link
+        var permanentLinkValue =  formattedTitle;
+
+        // Set the value of the permanent link input field
+        permanentLinkInput.value = permanentLinkValue;
+    });
+</script>
+
+<!-- block special caracter in permanent_link-->
+<script>
+    document.getElementById('permanent_link').addEventListener('keypress', function (event) {
+        var key = event.keyCode || event.which;
+        var char = String.fromCharCode(key);
+        
+        // Allow underscore character
+        if (char === '-') {
+            return;
+        }
+        
+        // Block special characters permanent_link
+        var specialCharacters = /[^\w]/; // \w matches alphanumeric characters (letters and digits)
+        if (specialCharacters.test(char)) {
+            event.preventDefault();
+        }
+    });
+</script>
 @endsection
 
 @section('page-content')
@@ -38,6 +82,13 @@
                                     value="{{ old('title', $blog->title) }}" required autofocus>
                             </div>
                             <!-- /title -->
+                            <!-- permanent_link -->
+                            <div class="form-group">
+                                <label class="col-form-label" for="permanent_link">https://cyberprotections.in/blog_details/</label>
+                                <input type="text" name="permanent_link" class="form-control" id="permanent_link" value="{{ old('permanent_link', $blog->permanent_link) }}"
+                                    required autofocus>
+                            </div>
+                            <!-- /permanent_link -->
                             <!-- author -->
                             <div class="form-group mb-0">
                                 <label class="col-form-label" for="author">Author</label>
