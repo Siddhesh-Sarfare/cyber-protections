@@ -161,6 +161,7 @@ class PagesController extends Controller
     {
         return view('layouts.frontend.pages.not_found');
     }
+    
 
     // class
 }
