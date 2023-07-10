@@ -36,7 +36,9 @@ class PagesController extends Controller
      */
     public function home()
     {
+        // blogs list
         $blogList = Blog::latest()->take(4)->get();
+        // resources list
         $resourceList = Resource::all();
         return view('layouts.frontend.pages.home', compact('blogList', 'resourceList'));
     }
