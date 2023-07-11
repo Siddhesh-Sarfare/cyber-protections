@@ -157,6 +157,17 @@
                 </div>
             </li>
             <!-- /Feedback -->
+            <!-- SEO -->
+            <li class="nav-item dropdown {{ request()->is('admin/faq*') ? 'active' : '' }}">
+                <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    SEO
+                </a>
+                <div class="dropdown-menu mt-auto" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('admin.seo.index') }}">Show All</a>
+                    <a class="dropdown-item" href="{{ route('admin.seo.create') }}">Create New</a>
+                </div>
+            </li>
         </ul>
         
         <ul class="navbar-nav ml-auto">

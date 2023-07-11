@@ -15,6 +15,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ContactController as ControllersContactController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\Admin\SEOController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -179,6 +180,20 @@ Route::middleware(['auth', 'role.checker:admin', 'throttle:100,1'])->group(funct
             Route::name('feedback.')->group(function () {
                 Route::get('feedback', [FeedbackController::class, 'index'])->name('index'); // show all feedback
             });
+
+            // SEO
+            // Faq
+            Route::name('seo.')->group(function () {
+                Route::get('seo', [SEOController::class, 'index'])->name('index'); // show all seo
+                Route::get('seo/create', [SEOController::class, 'create'])->name('create'); // show the add new seo
+                Route::post('seo', [SEOController::class, 'store'])->name('store'); // store new seo
+                Route::get('seo/edit/{id}', [SEOController::class, 'edit'])->name('edit'); // edit existing seo
+                Route::patch('seo/update/{id}', [SEOController::class, 'update'])->name('update'); // update existing seo
+                Route::delete('seo/delete/{id}', [SEOController::class, 'destroy'])->name('delete'); // delete existing seo
+                Route::get('seo/deleted/show', [SEOController::class, 'showDeleted'])->name('deleted.show'); // delete existing seo
+                Route::put('seo/deleted/restore/{id}', [SEOController::class, 'restoreDeleted'])->name('deleted.restore'); // delete existing seo
+            });
+
         });
     });
 });
