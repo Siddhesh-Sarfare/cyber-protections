@@ -4,6 +4,10 @@
 {{ $blog[0]->title }}
 @endsection
 
+@section('keywords'){{ $blog[0]->keywords }}@endsection
+
+@section('description'){{ $blog[0]->title }}@endsection
+
 @section('page-content')
 
 

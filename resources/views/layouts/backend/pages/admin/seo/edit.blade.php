@@ -70,15 +70,19 @@
                             <div class="form-group">
                                 <label class="col-form-label" for="page">Select Page</label>
                                 <select class="form-control" id="page" name="page" required>
-                                    <option value="">Select an page</option>
-                                    <option value="home" {{ ((old('page') == 'home') || $seo->page == 'home')? 'selected': '' }} >Home Page</option>
+                                    <option value="">Select a Page</option>
+                                    <option value="home" {{ ((old('page') == 'home') || $seo->page == 'home')? 'selected': '' }}>Home Page</option>
                                     <option value="about" {{ ((old('page') == 'about') || $seo->page == 'about')? 'selected': '' }}>About Page</option>
-                                    <option value="grievance" {{ ((old('page') == 'grievance') || $seo->page == 'grievance')? 'selected': '' }}>Grievance Page</option>
-                                    <option value="gallery" {{ ((old('page') == 'resources') || $seo->page == 'resources')? 'selected': '' }}>Resources Page</option>
+                                    <option value="resource" {{ ((old('page') == 'resource') || $seo->page == 'resource')? 'selected': '' }}>Resource Page</option>
                                     <option value="faqs" {{ ((old('page') == 'faqs') || $seo->page == 'faqs')? 'selected': '' }}>FAQs Page</option>
-                                    <option value="news" {{ ((old('page') == 'news') || $seo->page == 'news')? 'selected': '' }}>News Page</option>
                                     <option value="gallery" {{ ((old('page') == 'gallery') || $seo->page == 'gallery')? 'selected': '' }}>Gallery Page</option>
+                                    <option value="news" {{ ((old('page') == 'news') || $seo->page == 'news')? 'selected': '' }}>News Page</option>
+                                    <option value="blog" {{ ((old('page') == 'blog') || $seo->page == 'blog')? 'selected': '' }}>Blogs List Page</option>
+                                    <option value="grievance" {{ ((old('page') == 'grievance') || $seo->page == 'grievance')? 'selected': '' }}>Grievance Page</option>
                                     <option value="contact" {{ ((old('page') == 'contact') || $seo->page == 'contact')? 'selected': '' }}>Contact Page</option>
+                                    <option value="feedback" {{ ((old('page') == 'feedback') || $seo->page == 'feedback')? 'selected': '' }}>Feedback Page</option>
+                                    <option value="policy" {{ ((old('page') == 'policy') || $seo->page =='policy')? 'selected': '' }}>Policy Page</option>
+                                    <option value="not_found" {{ ((old('page') == 'not_found') || $seo->page =='not_found')? 'selected': '' }}>404 Not Found Page</option>
                                 </select>
                             </div>
                             <!-- /page -->

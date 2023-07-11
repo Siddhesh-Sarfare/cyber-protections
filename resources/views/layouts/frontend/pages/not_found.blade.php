@@ -4,6 +4,10 @@
 Page Not Found
 @endsection
 
+@section('keywords'){{ $seo->keywords }}@endsection
+
+@section('description'){{ $seo->description }}@endsection
+
 @section('page-content')
 <style class="automa-element-selector">
     @font-face {

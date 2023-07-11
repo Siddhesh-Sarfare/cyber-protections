@@ -4,6 +4,10 @@
 Feedback
 @endsection
 
+@section('keywords'){{ $seo->keywords }}@endsection
+
+@section('description'){{ $seo->description }}@endsection
+
 @push('styles')
     <style>
         .required {

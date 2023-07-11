@@ -4,6 +4,10 @@
 News
 @endsection
 
+@section('keywords'){{ $seo->keywords }}@endsection
+
+@section('description'){{ $seo->description }}@endsection
+
 @section('page-content')
 
 <main class="main">

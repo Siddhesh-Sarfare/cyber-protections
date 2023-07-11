@@ -17,7 +17,7 @@ class SEOController extends Controller
      */
     public function index()
     {
-        $seoList = SEO::orderBy('id', 'DESC')->get();
+        $seoList = SEO::orderBy('id', 'ASC')->get();
         return view('layouts.backend.pages.admin.seo.index', compact('seoList'));
     }
 

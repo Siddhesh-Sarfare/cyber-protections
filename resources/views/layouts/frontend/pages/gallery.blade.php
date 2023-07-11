@@ -4,6 +4,10 @@
 Gallery
 @endsection
 
+@section('keywords'){{ $seo->keywords }}@endsection
+
+@section('description'){{ $seo->description }}@endsection
+
 @section('page-content')
     <link href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css" rel="stylesheet">
     <main class="main">

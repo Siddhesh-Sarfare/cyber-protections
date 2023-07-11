@@ -4,6 +4,10 @@
 FAQs
 @endsection
 
+@section('keywords'){{ $seo->keywords }}@endsection
+
+@section('description'){{ $seo->description }}@endsection
+
 @section('page-content')
     <main class="main">
         <section class="page-banner text-center relative">

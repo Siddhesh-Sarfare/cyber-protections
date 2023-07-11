@@ -70,12 +70,16 @@
                                     <option value="">Select a Page</option>
                                     <option value="home" {{ (old('page') == 'home')? 'selected': '' }}>Home Page</option>
                                     <option value="about" {{ (old('page') == 'about')? 'selected': '' }}>About Page</option>
-                                    <option value="grievance" {{ (old('page') == 'grievance')? 'selected': '' }}>Grievance Page</option>
-                                    <option value="gallery" {{ (old('page') == 'resources')? 'selected': '' }}>Resources Page</option>
+                                    <option value="resource" {{ (old('page') == 'resource')? 'selected': '' }}>Resource Page</option>
                                     <option value="faqs" {{ (old('page') == 'faqs')? 'selected': '' }}>FAQs Page</option>
-                                    <option value="news" {{ (old('page') == 'news')? 'selected': '' }}>News Page</option>
                                     <option value="gallery" {{ (old('page') == 'gallery')? 'selected': '' }}>Gallery Page</option>
+                                    <option value="news" {{ (old('page') == 'news')? 'selected': '' }}>News Page</option>
+                                    <option value="blog" {{ (old('page') == 'blog')? 'selected': '' }}>Blogs List Page</option>
+                                    <option value="grievance" {{ (old('page') == 'grievance')? 'selected': '' }}>Grievance Page</option>
                                     <option value="contact" {{ (old('page') == 'contact')? 'selected': '' }}>Contact Page</option>
+                                    <option value="feedback" {{ (old('page') == 'feedback')? 'selected': '' }}>Feedback Page</option>
+                                    <option value="policy" {{ (old('page') == 'policy')? 'selected': '' }}>Policy Page</option>
+                                    <option value="not_found" {{ (old('page') == 'not_found')? 'selected': '' }}>404 Not Found Page</option>
                                 </select>
                             </div>
                             <!-- /page -->
