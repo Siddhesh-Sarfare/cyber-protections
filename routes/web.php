@@ -189,9 +189,6 @@ Route::middleware(['auth', 'role.checker:admin', 'throttle:100,1'])->group(funct
                 Route::post('seo', [SEOController::class, 'store'])->name('store'); // store new seo
                 Route::get('seo/edit/{id}', [SEOController::class, 'edit'])->name('edit'); // edit existing seo
                 Route::patch('seo/update/{id}', [SEOController::class, 'update'])->name('update'); // update existing seo
-                Route::delete('seo/delete/{id}', [SEOController::class, 'destroy'])->name('delete'); // delete existing seo
-                Route::get('seo/deleted/show', [SEOController::class, 'showDeleted'])->name('deleted.show'); // delete existing seo
-                Route::put('seo/deleted/restore/{id}', [SEOController::class, 'restoreDeleted'])->name('deleted.restore'); // delete existing seo
             });
 
         });
