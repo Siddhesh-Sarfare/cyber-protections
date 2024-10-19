@@ -26,16 +26,18 @@
                             </li>
 
                             <li class="menu-dropdwon" id="resource">
-                                <a href="{{ route('resource') }}">Resource Center</a>
+                                <a href="#">Resources</a>
                                 <ul class="list-unstyled">
+                                    <li><a href="{{ route('resource') }}">Resource Center</a></li>
                                     <li><a href="{{ route('faqs') }}">FAQS</a></li>
                                     <li><a href="{{ route('gallery') }}">Gallery</a></li>
                                 </ul>
                             </li>
 
                             <li class="menu-dropdwon" id="news">
-                                <a href="{{ route('news') }}">News</a>
+                                <a href="#">News</a>
                                 <ul class="list-unstyled">
+                                    <li><a href="{{ route('news') }}">News</a></li>
                                     <li><a href="{{ route('blogs') }}">Blog</a></li>
                                 </ul>
                             </li>
@@ -44,11 +46,8 @@
                                 <a href="{{ route('grievances') }}">Grievances</a>
                             </li>
                             
-                            <li class="menu-dropdwon" id="contact">
+                            <li>
                                 <a href="{{ route('contact') }}">Contact</a>
-                                <ul class="list-unstyled">
-                                    <li><a href="{{ route('feedback') }}">Feedback</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>

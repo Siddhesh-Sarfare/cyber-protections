@@ -43,13 +43,12 @@ Route::group(['middleware' => ['throttle:25,1']], function () {
     Route::get('grievances', [PagesController::class, 'grievances'])->name('grievances');
     Route::get('contact', [PagesController::class, 'contact'])->name('contact');
     Route::get('faqs', [PagesController::class, 'faqs'])->name('faqs');
-    Route::get('feedback', [PagesController::class, 'feedback'])->name('feedback');
     Route::get('blogs', [PagesController::class, 'blogs'])->name('blogs');
     Route::get('blog_details/{permanent_link}', [PagesController::class, 'blogDetails'])->name('blog_details');
     Route::get('policy', [PagesController::class, 'policy'])->name('policy');
     Route::get('not_found', [PagesController::class, 'not_found'])->name('not_found');
     Route::get('gallery', [PagesController::class, 'gallery'])->name('gallery');
-    Route::post('feedback', [ControllersContactController::class, 'contactStore'])->name('contactStore');
+    Route::post('contact', [ControllersContactController::class, 'contactStore'])->name('contactStore');
 });
 
 //Admin Routes
@@ -190,7 +189,6 @@ Route::middleware(['auth', 'role.checker:admin', 'throttle:100,1'])->group(funct
                 Route::get('seo/edit/{id}', [SEOController::class, 'edit'])->name('edit'); // edit existing seo
                 Route::patch('seo/update/{id}', [SEOController::class, 'update'])->name('update'); // update existing seo
             });
-
         });
     });
 });

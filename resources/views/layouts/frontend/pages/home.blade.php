@@ -15,18 +15,18 @@ Home
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 d-flex flex-center">
                         <div class="banner-content relative z-index-1">
-                            <h1 class="banner-title wow fadeInLeft animated" style="visibility: visible;">
+                            <h1 class="banner-title fadeInLeft animated" style="visibility: visible;">
                                 Do you know <span>?</span>
                             </h1>
-                            <p class="wow fadeInLeft animated" style="visibility: visible;">
+                            <p class="fadeInLeft animated" style="visibility: visible;">
                                 India ranked second in cybersecurity breaches in 2022, 20% of data stolen globally was from India.
                                 CyberProtections is here to protect people from cybercrimes!
                             </p>
-                            <a class="button wow fadeInLeft animated" href="{{ route('about') }}" style="visibility: visible;">Learn More
+                            <a class="button fadeInLeft animated" href="{{ route('about') }}" style="visibility: visible;">Learn More
                                 <i aria-hidden="true" class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 wow fadeInUp animated" style="visibility: visible;">
+                    <div class="col-xl-6 col-lg-6 col-md-12 fadeInUp animated" style="visibility: visible;">
                         <img alt="Banner Image" decoding="async" src="{{ asset('assets/frontend/images/cyber_banner.webp') }}">
                     </div>
                 </div>

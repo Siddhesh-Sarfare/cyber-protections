@@ -158,7 +158,7 @@
             </li>
             <!-- /Feedback -->
             <!-- SEO -->
-            <li class="nav-item dropdown {{ request()->is('admin/faq*') ? 'active' : '' }}">
+            <li class="nav-item dropdown {{ request()->is('admin/seo*') ? 'active' : '' }}">
                 <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     SEO

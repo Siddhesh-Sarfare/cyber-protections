@@ -15,7 +15,7 @@ Gallery
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12">
-                        <h1 class="page-title">Gallery</h1>
+                        <h1 class="page-title animated fadeInUp">Gallery</h1>
                     </div>
                 </div>
             </div>

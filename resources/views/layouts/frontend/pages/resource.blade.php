@@ -14,7 +14,7 @@ Resources
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12">
-                        <h1 class="page-title">Resources</h1>
+                        <h1 class="page-title animated fadeInUp">Resources</h1>
                     </div>
                 </div>
             </div>
@@ -27,29 +27,6 @@ Resources
                         <!-- Tabs nav -->
                         <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
-                            <!-- <a class="nav-link mb-3 p-3 shadow active" data-rel="#v-pills-it-tab" data-toggle="pill" href="#v-pills-it" role="tab" aria-controls="v-pills-it" aria-selected="true">
-                              <i class="fa fa-desktop mr-3"></i>
-                              <span class="font-weight-bold small text-uppercase">IT ACTs</span></a>
-
-                            <a class="nav-link mb-3 p-3 shadow" data-rel="#v-pills-security-tab" data-toggle="pill" href="#v-pills-security" role="tab" aria-controls="v-pills-security" aria-selected="false">
-                              <i class="fa fa-key mr-2"></i>
-                              <span class="font-weight-bold small text-uppercase">Cyber Security</span></a>
-
-                            <a class="nav-link mb-3 p-3 shadow" data-rel="#v-pills-crime-tab" data-toggle="pill" href="#v-pills-crime" role="tab" aria-controls="v-pills-crime" aria-selected="false">
-                              <i class="fa fa-star mr-2"></i>
-                              <span class="font-weight-bold small text-uppercase">Cyber Crime</span></a>
-
-                            <a class="nav-link mb-3 p-3 shadow" data-rel="#v-pills-studies-tab" data-toggle="pill" href="#v-pills-studies" role="tab" aria-controls="v-pills-studies" aria-selected="false">
-                              <i class="fa fa-graduation-cap mr-2"></i>
-                              <span class="font-weight-bold small text-uppercase">Cyber Studies</span></a>
-
-                            <a class="nav-link mb-3 p-3 shadow" data-rel="#v-pills-hacking-tab" data-toggle="pill" href="#v-pills-hacking" role="tab" aria-controls="v-pills-hacking" aria-selected="false">
-                              <i class="fa fa-hacker-news mr-2"></i>
-                              <span class="font-weight-bold small text-uppercase">Ethical Hacking</span></a>
-
-                            <a class="nav-link mb-3 p-3 shadow" data-rel="#v-pills-cloud-tab" data-toggle="pill" href="#v-pills-cloud" role="tab" aria-controls="v-pills-cloud" aria-selected="false">
-                              <i class="fa fa-cloud mr-2"></i>
-                              <span class="font-weight-bold small text-uppercase">Cloud Security</span></a> -->
 
                             <?php
             $c=1;

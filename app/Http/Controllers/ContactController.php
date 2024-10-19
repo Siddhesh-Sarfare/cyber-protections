@@ -36,12 +36,12 @@ class ContactController extends Controller
             // Mail::to("shindetejas61@gmail.com")->send(new ContactMail($name, $email, $mobile, $comment));
             $request->session()->flash('flash_notification.message', 'Contact form successfully submitted.');
             $request->session()->flash('flash_notification.level', 'success');
-            return redirect()->route('feedback');
+            return redirect()->route('contact');
         } else {
 
             $request->session()->flash('flash_notification.message', 'Something went wrong, please try again later.');
             $request->session()->flash('flash_notification.level', 'danger');
-            return redirect()->route('feedback');
+            return redirect()->route('contact');
         }
     }
 }

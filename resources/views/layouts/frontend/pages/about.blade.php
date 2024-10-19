@@ -15,7 +15,7 @@ About Us
       <div class="container">
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12">
-            <h1 class="page-title wow fadeInUp">About us</h1>
+            <h1 class="page-title animated fadeInUp">About us</h1>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@ About Us
       <div class="container">
         <div class="row flex-center">
           <div class="col-xl-6 col-lg-6 col-md-12 text-center">
-            <div class="mission-video wow fadeInLeft">
+            <div class="mission-video animated fadeInLeft">
               <img src="{{asset("assets/frontend/images/mission01.png")}}" alt="Mission">
               <!-- <a href="javascript:void(0)" class="play-icon" data-bs-toggle="modal" data-bs-target="#video-open"> -->
               <span>
@@ -35,7 +35,7 @@ About Us
               </a>
             </div>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 wow fadeInRight">
+          <div class="col-xl-6 col-lg-6 col-md-12 animated fadeInRight">
             <div class="mission-content">
               <h3 class="mission-title">Vision</h3>
               <p>Our Country is facing significant challenges from terrorist organization in the form of cyber-attacks
@@ -48,7 +48,7 @@ About Us
           </div>
         </div>
         <div class="row flex-center pt-100">
-          <div class="col-xl-6 col-lg-6 col-md-12 order-t-2 wow fadeInLeft">
+          <div class="col-xl-6 col-lg-6 col-md-12 order-t-2 animated fadeInLeft">
             <div class="mission-content">
               <h3 class="mission-title">Our Mission</h3>
               <p>The objective of Cyber Protections is to raise awareness and educate the public about the importance of
@@ -58,7 +58,7 @@ About Us
               </p>
             </div>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 text-center order-t-1 wow fadeInRight">
+          <div class="col-xl-6 col-lg-6 col-md-12 text-center order-t-1 animated fadeInRight">
             <img src="{{asset("assets/frontend/images/mission02.png")}}" alt="Mission">
           </div>
         </div>

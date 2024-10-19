@@ -18,7 +18,7 @@
                     class="fa fa-twitter" aria-hidden="true"></i></a></li>
               <li><a href=""><i
                     class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li><a href=""><i
+              <li><a href="https://instagram.com/cyberprotections.in?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><i
                     class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
           </div>

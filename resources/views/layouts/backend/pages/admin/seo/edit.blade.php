@@ -80,7 +80,6 @@
                                     <option value="blog" {{ ((old('page') == 'blog') || $seo->page == 'blog')? 'selected': '' }}>Blogs List Page</option>
                                     <option value="grievance" {{ ((old('page') == 'grievance') || $seo->page == 'grievance')? 'selected': '' }}>Grievance Page</option>
                                     <option value="contact" {{ ((old('page') == 'contact') || $seo->page == 'contact')? 'selected': '' }}>Contact Page</option>
-                                    <option value="feedback" {{ ((old('page') == 'feedback') || $seo->page == 'feedback')? 'selected': '' }}>Feedback Page</option>
                                     <option value="policy" {{ ((old('page') == 'policy') || $seo->page =='policy')? 'selected': '' }}>Policy Page</option>
                                     <option value="not_found" {{ ((old('page') == 'not_found') || $seo->page =='not_found')? 'selected': '' }}>404 Not Found Page</option>
                                 </select>

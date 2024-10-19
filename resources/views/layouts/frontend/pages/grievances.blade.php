@@ -15,7 +15,7 @@ Grievances
       <div class="container">
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12">
-            <h1 class="page-title wow fadeInUp">Grievances</h1>
+            <h1 class="page-title animated fadeInUp">Grievances</h1>
           </div>
         </div>
       </div>
@@ -25,12 +25,12 @@ Grievances
       <div class="container">
         <div class="row flex-center">
           <div class="col-xl-6 col-lg-6 col-md-12 text-center">
-            <div class="mission-video wow fadeInLeft">
+            <div class="mission-video animated fadeInLeft">
               <img src="{{asset("assets/frontend/images/grievances01.png")}}" alt="Mission">
               </a>
             </div>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 wow fadeInRight">
+          <div class="col-xl-6 col-lg-6 col-md-12 animated fadeInRight">
             <div class="mission-content">
               <h3 class="blog-list-title sub-title">National Cyber Crime Reporting Portal: A Government of
                 India Initiative:</h3>

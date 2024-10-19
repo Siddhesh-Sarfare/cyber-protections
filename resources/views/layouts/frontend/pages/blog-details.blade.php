@@ -16,7 +16,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12">
-            <h1 class="page-title">Blog Details</h1>
+            <h1 class="page-title animated fadeInUp">Blog Details</h1>
           </div>
         </div>
       </div>
